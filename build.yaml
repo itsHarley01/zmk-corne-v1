@@ -16,5 +16,18 @@
 #     snippet: studio-rpc-usb-uart
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
-#
----
+
+board: ["nice_nano_v2"]
+shield: ["corne_left", "corne_right"]
+
+# Optional: Advanced builds (like with ZMK Studio)
+include:
+  - board: nice_nano_v2
+    shield: corne_left
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: corne_left_with_studio
+
+  - board: nice_nano_v2
+    shield: corne_right
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: corne_right_with_studio
