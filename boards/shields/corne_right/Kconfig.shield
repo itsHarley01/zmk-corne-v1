@@ -1,2 +1,5 @@
 config SHIELD_CORNE_RIGHT
     def_bool $(shields_list_contains,corne_right)
+
+config ZMK_SPLIT_ROLE_PERIPHERAL
+    bool "Enable peripheral role for split keyboard"
