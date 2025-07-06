@@ -11,17 +11,17 @@ keyboard {
     diode-direction = <COL2ROW>;
 
 
-    col-gpios = <&gpio1 15 GPIO_ACTIVE_LOW>,  
-                <&gpio0 2 GPIO_ACTIVE_LOW>, 
-                <&gpio0 29 GPIO_ACTIVE_LOW>, 
-                <&gpio0 31 GPIO_ACTIVE_LOW>, 
-                <&gpio0 11 GPIO_ACTIVE_LOW>,  
-                <&gpio1 0 GPIO_ACTIVE_LOW>; 
+    col-gpios = <&gpio1 15 GPIO_ACTIVE_HIGH>,  
+                <&gpio0 2 GPIO_ACTIVE_HIGH>, 
+                <&gpio0 29 GPIO_ACTIVE_HIGH>, 
+                <&gpio0 31 GPIO_ACTIVE_HIGH>, 
+                <&gpio0 11 GPIO_ACTIVE_HIGH>,  
+                <&gpio1 0 GPIO_ACTIVE_HIGH>; 
 
-    row-gpios = <&gpio0 24 GPIO_ACTIVE_LOW>, 
-                <&gpio0 22 GPIO_ACTIVE_LOW>, 
-                <&gpio0 20 GPIO_ACTIVE_LOW>, 
-                <&gpio0 17 GPIO_ACTIVE_LOW>; 
+    row-gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>, 
+                <&gpio0 22 GPIO_ACTIVE_HIGH>, 
+                <&gpio0 20 GPIO_ACTIVE_HIGH>, 
+                <&gpio0 17 GPIO_ACTIVE_HIGH>; 
 };
 
 matrix_transform: matrix_transform {
