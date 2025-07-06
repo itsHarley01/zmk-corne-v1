@@ -8,7 +8,7 @@
 
 keyboard {
     compatible = "zmk,keyboard";
-    diode-direction = <ROW2COL>;
+    diode-direction = <COL2ROW>;
 
     col-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>,
                 <&gpio0 3 GPIO_ACTIVE_LOW>,
