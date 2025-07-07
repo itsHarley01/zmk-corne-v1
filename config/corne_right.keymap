@@ -1,0 +1,35 @@
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            display-name = "Base";
+            bindings = <
+                &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+                &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+                &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                       &kp RET  &mo 2  &kp RALT
+            >;
+        };
+
+        lower_layer {
+            display-name = "Lower";
+            bindings = <
+                &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
+                &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
+                &trans    &trans    &trans    &trans     &trans  &trans
+                         &kp RET   &trans    &kp RALT
+            >;
+        };
+
+        raise_layer {
+            display-name = "Raise";
+            bindings = <
+                &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+                &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+                &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                           &kp RET    &trans     &kp RALT
+            >;
+        };
+    };
+};
