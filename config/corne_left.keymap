@@ -3,13 +3,12 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Test";
-
+            display-name = "Base";
             bindings = <
-                &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T
-                &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G
-                &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B
-                          &kp SPACE  &kp RET  &kp ESC
+                &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T
+                &kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G
+                &kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B
+                                        &kp LGUI  &mo 1  &kp SPACE
             >;
         };
     };
