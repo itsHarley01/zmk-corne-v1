@@ -6,9 +6,10 @@
     zmk,studio-rpc-uart = &uart1;
 };
 
-keyboard {
-    compatible = "zmk,keyboard";
-    diode-direction = <COL2ROW>;
+    kscan0: kscan_0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        label = "KSCAN";
+        diode-direction = "col2row";
 
 
     col-gpios = <&gpio1 15 GPIO_ACTIVE_LOW>,  
